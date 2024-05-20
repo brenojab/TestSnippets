@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>testcmt</Title>
+      <Shortcut>testcmt</Shortcut>
+      <Description>Code snippet for test method.</Description>
+      <Author>Breno Batista</Author>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="false"></Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[[TestMethod]
+[TestCategory("Cat")]
+[TestProperty(nameof(Calculator), "Security")]
+[Priority(1)]
+[Owner("Myself")]
+public void UnityOfWork_StateUnderTest_ExpectedBehavior()
+{
+    // Arrange
+    int expected = 1;
+    int result = 1;
+    //var classe = new class();
+
+    // Act
+    //var result = classe.Method();
+
+    // Assert
+    Assert.AreEqual(result, expected);
+}$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

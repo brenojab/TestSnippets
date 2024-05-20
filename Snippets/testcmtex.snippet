@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>testcmtex</Title>
+      <Shortcut>testcmtex</Shortcut>
+      <Description>Code snippet for test method with exception.</Description>
+      <Author>Breno Batista</Author>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="false"></Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[[TestMethod]
+[TestCategory("Cat")]
+[TestProperty(nameof(Calculator), "Exception")]
+[Priority(5)]
+[Owner("Myself")]
+[ExpectedException(typeof(Exception))]
+public void UnityOfWork_StateUnderTest_ExpectedBehaviorException()
+{
+    // Arrange
+    int result = 0;
+    //var classe = new class();
+
+    // Act
+    try
+    {
+        //var result = classe.Divide(a, b);
+    }
+    catch (Exception ex)
+    {
+        // Assert
+        Assert.AreEqual("ErrMsg", ex.Message);
+        throw;
+    }
+    //Assert.Inconclusive("Not conclusive at all.");
+}$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
